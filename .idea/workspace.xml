@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0c7297e2-7a4a-4ac6-bc35-ad71ca994544" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1tOvy84UJU7ICly8L9SgDPYaehr" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="dart.settings" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="FlutterRunConfigurationType" factoryName="Flutter" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/url_shortener/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="202" y="-804" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1622856278879">
+      <screen x="-453" y="-1055" width="2560" height="1055" />
+    </state>
+    <state x="202" y="-804" key="#com.intellij.execution.impl.EditConfigurationsDialog/-453.-1055.2560.1055/0.25.1680.938@-453.-1055.2560.1055" timestamp="1622856278879" />
+    <state x="331" y="-703" key="#com.intellij.ide.util.TreeFileChooserDialog" timestamp="1622855786016">
+      <screen x="-453" y="-1055" width="2560" height="1055" />
+    </state>
+    <state x="331" y="-703" key="#com.intellij.ide.util.TreeFileChooserDialog/-453.-1055.2560.1055/0.25.1680.938@-453.-1055.2560.1055" timestamp="1622855786016" />
+    <state x="95" y="-861" key="SettingsEditor" timestamp="1622854417852">
+      <screen x="-453" y="-1055" width="2560" height="1055" />
+    </state>
+    <state x="95" y="-861" key="SettingsEditor/-453.-1055.2560.1055/0.25.1680.938@-453.-1055.2560.1055" timestamp="1622854417852" />
+  </component>
+</project>

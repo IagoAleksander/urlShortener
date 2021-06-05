@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="38e43cda-82d5-4013-9fb3-8f5e88a27be5" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[RQ8NB08FKVY]" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1tVZez054RkLbcsGkD9eXAmdWjQ" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="dart.analysis.tool.window.force.activate" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/utils" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/ui/screens" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/utils" />
+      <recent name="$PROJECT_DIR$/lib" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Flutter Test.Counter increments smoke test">
+    <configuration name="Counter increments smoke test" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testName" value="Counter increments smoke test" />
+      <option name="testFile" value="$PROJECT_DIR$/test/widget_test.dart" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Flutter Test.Counter increments smoke test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="218" y="-602" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1622862303260">
+      <screen x="-453" y="-1055" width="2560" height="1055" />
+    </state>
+    <state x="218" y="-602" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/-453.-1055.2560.1055/0.25.1680.944@-453.-1055.2560.1055" timestamp="1622862303260" />
+    <state x="421" y="-645" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1622862305148">
+      <screen x="-453" y="-1055" width="2560" height="1055" />
+    </state>
+    <state x="421" y="-645" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/-453.-1055.2560.1055/0.25.1680.944@-453.-1055.2560.1055" timestamp="1622862305148" />
+    <state width="1349" height="249" key="GridCell.Tab.0.bottom" timestamp="1622863468231">
+      <screen x="-453" y="-1055" width="2560" height="1055" />
+    </state>
+    <state width="1638" height="249" key="GridCell.Tab.0.bottom/-453.-1055.2560.1055/0.25.1680.938@-453.-1055.2560.1055" timestamp="1622856397627" />
+    <state width="1638" height="249" key="GridCell.Tab.0.bottom/-453.-1055.2560.1055/0.25.1680.941@-453.-1055.2560.1055" timestamp="1622861535048" />
+    <state width="1349" height="249" key="GridCell.Tab.0.bottom/-453.-1055.2560.1055/0.25.1680.944@-453.-1055.2560.1055" timestamp="1622863468231" />
+    <state width="1349" height="249" key="GridCell.Tab.0.center" timestamp="1622863468230">
+      <screen x="-453" y="-1055" width="2560" height="1055" />
+    </state>
+    <state width="1638" height="249" key="GridCell.Tab.0.center/-453.-1055.2560.1055/0.25.1680.938@-453.-1055.2560.1055" timestamp="1622856397625" />
+    <state width="1638" height="249" key="GridCell.Tab.0.center/-453.-1055.2560.1055/0.25.1680.941@-453.-1055.2560.1055" timestamp="1622861535047" />
+    <state width="1349" height="249" key="GridCell.Tab.0.center/-453.-1055.2560.1055/0.25.1680.944@-453.-1055.2560.1055" timestamp="1622863468230" />
+    <state width="1349" height="249" key="GridCell.Tab.0.left" timestamp="1622863468230">
+      <screen x="-453" y="-1055" width="2560" height="1055" />
+    </state>
+    <state width="1638" height="249" key="GridCell.Tab.0.left/-453.-1055.2560.1055/0.25.1680.938@-453.-1055.2560.1055" timestamp="1622856397624" />
+    <state width="1638" height="249" key="GridCell.Tab.0.left/-453.-1055.2560.1055/0.25.1680.941@-453.-1055.2560.1055" timestamp="1622861535046" />
+    <state width="1349" height="249" key="GridCell.Tab.0.left/-453.-1055.2560.1055/0.25.1680.944@-453.-1055.2560.1055" timestamp="1622863468230" />
+    <state width="1349" height="249" key="GridCell.Tab.0.right" timestamp="1622863468231">
+      <screen x="-453" y="-1055" width="2560" height="1055" />
+    </state>
+    <state width="1638" height="249" key="GridCell.Tab.0.right/-453.-1055.2560.1055/0.25.1680.938@-453.-1055.2560.1055" timestamp="1622856397626" />
+    <state width="1638" height="249" key="GridCell.Tab.0.right/-453.-1055.2560.1055/0.25.1680.941@-453.-1055.2560.1055" timestamp="1622861535047" />
+    <state width="1349" height="249" key="GridCell.Tab.0.right/-453.-1055.2560.1055/0.25.1680.944@-453.-1055.2560.1055" timestamp="1622863468231" />
+  </component>
+</project>
