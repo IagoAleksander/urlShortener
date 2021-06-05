@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="38e43cda-82d5-4013-9fb3-8f5e88a27be5" name="Default Changelist" comment="" />
+    <list default="true" id="38e43cda-82d5-4013-9fb3-8f5e88a27be5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,7 +30,7 @@
     <property name="dart.analysis.tool.window.force.activate" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/utils" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/resources" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -37,11 +41,12 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/resources" />
       <recent name="$PROJECT_DIR$/lib/utils" />
       <recent name="$PROJECT_DIR$/lib" />
     </key>
   </component>
-  <component name="RunManager" selected="Flutter Test.Counter increments smoke test">
+  <component name="RunManager" selected="Flutter.main.dart">
     <configuration name="Counter increments smoke test" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
       <option name="testName" value="Counter increments smoke test" />
       <option name="testFile" value="$PROJECT_DIR$/test/widget_test.dart" />
@@ -62,29 +67,29 @@
       <screen x="-453" y="-1055" width="2560" height="1055" />
     </state>
     <state x="421" y="-645" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/-453.-1055.2560.1055/0.25.1680.944@-453.-1055.2560.1055" timestamp="1622862305148" />
-    <state width="1349" height="249" key="GridCell.Tab.0.bottom" timestamp="1622863468231">
+    <state width="1349" height="249" key="GridCell.Tab.0.bottom" timestamp="1622863910890">
       <screen x="-453" y="-1055" width="2560" height="1055" />
     </state>
     <state width="1638" height="249" key="GridCell.Tab.0.bottom/-453.-1055.2560.1055/0.25.1680.938@-453.-1055.2560.1055" timestamp="1622856397627" />
     <state width="1638" height="249" key="GridCell.Tab.0.bottom/-453.-1055.2560.1055/0.25.1680.941@-453.-1055.2560.1055" timestamp="1622861535048" />
-    <state width="1349" height="249" key="GridCell.Tab.0.bottom/-453.-1055.2560.1055/0.25.1680.944@-453.-1055.2560.1055" timestamp="1622863468231" />
-    <state width="1349" height="249" key="GridCell.Tab.0.center" timestamp="1622863468230">
+    <state width="1349" height="249" key="GridCell.Tab.0.bottom/-453.-1055.2560.1055/0.25.1680.944@-453.-1055.2560.1055" timestamp="1622863910890" />
+    <state width="1349" height="249" key="GridCell.Tab.0.center" timestamp="1622863910889">
       <screen x="-453" y="-1055" width="2560" height="1055" />
     </state>
     <state width="1638" height="249" key="GridCell.Tab.0.center/-453.-1055.2560.1055/0.25.1680.938@-453.-1055.2560.1055" timestamp="1622856397625" />
     <state width="1638" height="249" key="GridCell.Tab.0.center/-453.-1055.2560.1055/0.25.1680.941@-453.-1055.2560.1055" timestamp="1622861535047" />
-    <state width="1349" height="249" key="GridCell.Tab.0.center/-453.-1055.2560.1055/0.25.1680.944@-453.-1055.2560.1055" timestamp="1622863468230" />
-    <state width="1349" height="249" key="GridCell.Tab.0.left" timestamp="1622863468230">
+    <state width="1349" height="249" key="GridCell.Tab.0.center/-453.-1055.2560.1055/0.25.1680.944@-453.-1055.2560.1055" timestamp="1622863910889" />
+    <state width="1349" height="249" key="GridCell.Tab.0.left" timestamp="1622863910889">
       <screen x="-453" y="-1055" width="2560" height="1055" />
     </state>
     <state width="1638" height="249" key="GridCell.Tab.0.left/-453.-1055.2560.1055/0.25.1680.938@-453.-1055.2560.1055" timestamp="1622856397624" />
     <state width="1638" height="249" key="GridCell.Tab.0.left/-453.-1055.2560.1055/0.25.1680.941@-453.-1055.2560.1055" timestamp="1622861535046" />
-    <state width="1349" height="249" key="GridCell.Tab.0.left/-453.-1055.2560.1055/0.25.1680.944@-453.-1055.2560.1055" timestamp="1622863468230" />
-    <state width="1349" height="249" key="GridCell.Tab.0.right" timestamp="1622863468231">
+    <state width="1349" height="249" key="GridCell.Tab.0.left/-453.-1055.2560.1055/0.25.1680.944@-453.-1055.2560.1055" timestamp="1622863910889" />
+    <state width="1349" height="249" key="GridCell.Tab.0.right" timestamp="1622863910890">
       <screen x="-453" y="-1055" width="2560" height="1055" />
     </state>
     <state width="1638" height="249" key="GridCell.Tab.0.right/-453.-1055.2560.1055/0.25.1680.938@-453.-1055.2560.1055" timestamp="1622856397626" />
     <state width="1638" height="249" key="GridCell.Tab.0.right/-453.-1055.2560.1055/0.25.1680.941@-453.-1055.2560.1055" timestamp="1622861535047" />
-    <state width="1349" height="249" key="GridCell.Tab.0.right/-453.-1055.2560.1055/0.25.1680.944@-453.-1055.2560.1055" timestamp="1622863468231" />
+    <state width="1349" height="249" key="GridCell.Tab.0.right/-453.-1055.2560.1055/0.25.1680.944@-453.-1055.2560.1055" timestamp="1622863910890" />
   </component>
 </project>
