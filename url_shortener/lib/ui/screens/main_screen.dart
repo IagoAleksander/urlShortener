@@ -86,17 +86,11 @@ class _MainScreenState extends State<MainScreen> {
                         ),
                       ),
                       SizedBox(height: 10.h),
-                      Padding(
-                        padding: EdgeInsets.only(
-                          left: 48.w,
-                          right: 48.w,
-                        ),
-                        child: CustomButton(
-                          UniqueKey(),
-                          ButtonType.elevatedButton,
-                          "Shorten it!",
-                          () => formStore.validateLink(_linkFieldController),
-                        ),
+                      CustomButton(
+                        UniqueKey(),
+                        ButtonType.elevatedButton,
+                        "Shorten it!",
+                        () => formStore.validateLink(_linkFieldController),
                       ),
                     ],
                   ),
