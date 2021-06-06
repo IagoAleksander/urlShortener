@@ -24,31 +24,28 @@ class CardBenefit extends StatelessWidget {
               borderRadius: BorderRadius.circular(8.r),
             ),
             margin: EdgeInsets.all(25.w),
-            color: ColorsRes.backgroundWhite,
             child: Padding(
               padding: EdgeInsets.all(23.w),
-              child: SizedBox(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.only(top: 50.h),
-                      child: Text(
-                        benefit.title,
-                        textAlign: TextAlign.center,
-                        style: Theme.of(context).textTheme.subtitle1,
-                      ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Padding(
+                    padding: EdgeInsets.only(top: 50.h),
+                    child: Text(
+                      benefit.title,
+                      textAlign: TextAlign.center,
+                      style: Theme.of(context).textTheme.subtitle1,
                     ),
-                    Padding(
-                      padding: EdgeInsets.only(top: 20.h),
-                      child: Text(
-                        benefit.description,
-                        textAlign: TextAlign.center,
-                        style: Theme.of(context).textTheme.bodyText1,
-                      ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(top: 20.h),
+                    child: Text(
+                      benefit.description,
+                      textAlign: TextAlign.center,
+                      style: Theme.of(context).textTheme.bodyText1,
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
             ),
           ),
