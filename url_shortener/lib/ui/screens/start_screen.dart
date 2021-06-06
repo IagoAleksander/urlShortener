@@ -29,14 +29,11 @@ class StartScreen extends StatelessWidget {
                 style: Theme.of(context).textTheme.headline6),
             SizedBox(height: 10.h),
             Text(
-                "Build your brand’s recognition and\nget detailed insights on how your\nlinks are performing. ",
+                "Build your brand’s recognition and\nget detailed insights on how your\nlinks are performing.",
                 textAlign: TextAlign.center,
                 style: Theme.of(context).textTheme.bodyText1),
             Padding(
-              padding: EdgeInsets.symmetric(
-                vertical: 30.h,
-                horizontal: 48.w,
-              ),
+              padding: EdgeInsets.symmetric(vertical: 30.h),
               child: CustomButton(
                 UniqueKey(),
                 ButtonType.elevatedButton,
