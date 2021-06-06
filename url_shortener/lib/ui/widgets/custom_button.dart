@@ -11,13 +11,11 @@ class CustomButton extends StatelessWidget {
   final ButtonType buttonType;
   final String text;
   final VoidCallback? _function;
+  final bool isAlternativeVersion;
 
-  const CustomButton(
-    Key? key,
-    this.buttonType,
-    this.text,
-    this._function,
-  ) : super(key: key);
+  const CustomButton(Key? key, this.buttonType, this.text, this._function,
+      {this.isAlternativeVersion = false})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -26,8 +24,11 @@ class CustomButton extends StatelessWidget {
         {
           return ElevatedButton(
             style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all<Color>(
-                    Theme.of(context).primaryColor)),
+              backgroundColor: MaterialStateProperty.all<Color>(
+                  isAlternativeVersion
+                      ? Theme.of(context).primaryColorDark
+                      : Theme.of(context).primaryColor),
+            ),
             onPressed: _function,
             child: Container(
               child: Text(
@@ -47,7 +48,11 @@ class CustomButton extends StatelessWidget {
       case ButtonType.textButton:
         {
           return Padding(
-            padding: EdgeInsets.only(bottom: 30.h, left: 48.w, right: 48.w),
+            padding: EdgeInsets.only(
+              bottom: 30.h,
+              left: 48.w,
+              right: 48.w,
+            ),
             child: TextButton(
               onPressed: _function,
               child: Container(
