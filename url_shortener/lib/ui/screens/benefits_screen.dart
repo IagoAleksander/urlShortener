@@ -69,12 +69,12 @@ class _BenefitsScreenState extends State<BenefitsScreen> {
   _displayLogo() {
     return Padding(
       padding: EdgeInsets.only(
-        top: ScreenUtil().setHeight(50),
+        top: 50.h,
       ),
       child: SvgPicture.asset(
         'assets/images/logo.svg',
-        width: ScreenUtil().setWidth(120),
-        height: ScreenUtil().setHeight(32),
+        width: 120.w,
+        height: 32.h,
       ),
     );
   }
