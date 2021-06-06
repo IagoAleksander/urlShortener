@@ -24,25 +24,22 @@ class CustomButton extends StatelessWidget {
     switch (buttonType) {
       case ButtonType.elevatedButton:
         {
-          return Padding(
-            padding: EdgeInsets.only(bottom: ScreenUtil().setHeight(30)),
-            child: ElevatedButton(
-              style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all<Color>(
-                      Theme.of(context).primaryColor)),
-              onPressed: _function,
-              child: Container(
-                child: Text(
-                  text.toUpperCase(),
-                  style: TextStyle(
-                    fontSize: ScreenUtil().setSp(20),
-                    fontWeight: FontWeight.bold,
-                  ),
+          return ElevatedButton(
+            style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all<Color>(
+                    Theme.of(context).primaryColor)),
+            onPressed: _function,
+            child: Container(
+              child: Text(
+                text.toUpperCase(),
+                style: TextStyle(
+                  fontSize: ScreenUtil().setSp(20),
+                  fontWeight: FontWeight.bold,
                 ),
-                alignment: Alignment.center,
-                width: ScreenUtil().setWidth(280),
-                height: ScreenUtil().setHeight(50),
               ),
+              alignment: Alignment.center,
+              width: ScreenUtil().setWidth(280),
+              height: ScreenUtil().setHeight(50),
             ),
           );
         }
