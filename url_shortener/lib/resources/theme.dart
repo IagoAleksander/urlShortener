@@ -35,5 +35,6 @@ ThemeData getThemeData() {
           fontSize: 17.sp,
           color: ColorsRes.neutralLightGray),
     ),
+    progressIndicatorTheme: const ProgressIndicatorThemeData(color: ColorsRes.primaryCyan)
   );
 }

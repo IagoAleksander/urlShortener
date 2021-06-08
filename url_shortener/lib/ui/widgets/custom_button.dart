@@ -23,7 +23,7 @@ class CustomButton extends StatelessWidget {
       case ButtonType.elevatedButton:
         {
           return Padding(
-            padding: EdgeInsets.symmetric(horizontal: 48.w),
+            padding: EdgeInsets.symmetric(horizontal: 23.w),
             child: ElevatedButton(
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all<Color>(
