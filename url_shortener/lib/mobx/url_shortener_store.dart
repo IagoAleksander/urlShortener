@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:http/http.dart';
 import 'package:mobx/mobx.dart';
 import 'package:url_shortener/data/database_helper.dart';
 import 'package:url_shortener/data/models/shortened_url.dart';
@@ -19,6 +20,7 @@ abstract class _UrlShortenerStore with Store {
   @observable
   EnumState state = EnumState.loadingHistory;
 
+  final Client client = Client();
   final DatabaseHelper databaseHelper = DatabaseHelper();
 
   _UrlShortenerStore() {
@@ -35,24 +37,19 @@ abstract class _UrlShortenerStore with Store {
     if (state != EnumState.shorteningUrl) {
       state = EnumState.shorteningUrl;
 
-      UrlShortenerResponse? response = await shortenUrl(controller.text);
-      if (response != null) {
-        ShortenedUrl url = ShortenedUrl(
-          originalLink: response.originalLink,
-          shortLink: response.shortLink,
-        );
-        int insertedId = await saveUrl(url);
+      UrlShortenerResponse? response = await fetchUrl(client, controller.text);
+      ShortenedUrl url = ShortenedUrl(
+        originalLink: response.originalLink,
+        shortLink: response.shortLink,
+      );
+      int insertedId = await saveUrl(url);
 
-        if (insertedId > 0) {
-          fetchUrls();
-          controller.clear();
-          state = EnumState.contentList;
-        } else {
-          //todo display database error message
-        }
-      }
-      else {
-        //todo display service error message
+      if (insertedId > 0) {
+        fetchUrls();
+        controller.clear();
+        state = EnumState.contentList;
+      } else {
+        //todo display database error toast message
       }
     }
   }

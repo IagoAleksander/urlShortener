@@ -2,19 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38e43cda-82d5-4013-9fb3-8f5e88a27be5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/data/models/shortened_url.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/data/models/url_shortener_response.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/data/repositories/short_link_repository.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mobx/url_shortener_store.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/shorten_url_test.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/resources/theme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/resources/theme.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/screens/main_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/screens/main_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/widgets/custom_button.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/widgets/custom_button.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/repositories/data_repository.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/repositories/short_link_repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/repositories/short_link_repository.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/mobx/url_shortener_store.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/mobx/url_shortener_store.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/widget_test.dart" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,8 +65,31 @@
       <option name="testFile" value="$PROJECT_DIR$/test/widget_test.dart" />
       <method v="2" />
     </configuration>
+    <configuration name="returns an Album if the http call completes successfully" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testName" value="returns an Album if the http call completes successfully" />
+      <option name="testFile" value="$PROJECT_DIR$/test/shorten_url_test.dart" />
+      <method v="2" />
+    </configuration>
+    <configuration name="returns an Shortened Url Information if the http call completes successfully" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testName" value="returns an Shortened Url Information if the http call completes successfully" />
+      <option name="testFile" value="$PROJECT_DIR$/test/shorten_url_test.dart" />
+      <method v="2" />
+    </configuration>
+    <configuration name="returns shortened url Information if the http call completes successfully" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testName" value="returns shortened url Information if the http call completes successfully" />
+      <option name="testFile" value="$PROJECT_DIR$/test/shorten_url_test.dart" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tests in shorten_url_test.dart" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testFile" value="$PROJECT_DIR$/test/shorten_url_test.dart" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Flutter Test.returns shortened url Information if the http call completes successfully" />
+        <item itemvalue="Flutter Test.returns an Shortened Url Information if the http call completes successfully" />
+        <item itemvalue="Flutter Test.tests in shorten_url_test.dart" />
+        <item itemvalue="Flutter Test.returns an Album if the http call completes successfully" />
         <item itemvalue="Flutter Test.Counter increments smoke test" />
       </list>
     </recent_temporary>
@@ -88,10 +107,10 @@
       <screen x="0" y="25" width="1680" height="938" />
     </state>
     <state x="544" y="245" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-453.-1055.2560.1055/0.25.1680.938@0.25.1680.938" timestamp="1622960585399" />
-    <state x="607" y="205" key="#xdebugger.evaluate" timestamp="1623042352780">
+    <state x="607" y="205" key="#xdebugger.evaluate" timestamp="1623136703719">
       <screen x="0" y="25" width="1680" height="938" />
     </state>
-    <state x="607" y="205" key="#xdebugger.evaluate/-453.-1055.2560.1055/0.25.1680.938@0.25.1680.938" timestamp="1623042352780" />
+    <state x="607" y="205" key="#xdebugger.evaluate/-453.-1055.2560.1055/0.25.1680.938@0.25.1680.938" timestamp="1623136703719" />
     <state x="484" y="174" width="782" height="657" key="AVDManager" timestamp="1623109086591">
       <screen x="0" y="25" width="1680" height="938" />
     </state>
@@ -102,41 +121,41 @@
       <screen x="0" y="25" width="1680" height="938" />
     </state>
     <state x="601" y="244" key="AndroidProcessChooserDialog/-453.-1055.2560.1055/0.25.1680.938@0.25.1680.938" timestamp="1623112929536" />
-    <state width="1349" height="249" key="GridCell.Tab.0.bottom" timestamp="1623127847815">
+    <state width="1349" height="249" key="GridCell.Tab.0.bottom" timestamp="1623136997284">
       <screen x="0" y="25" width="1680" height="938" />
     </state>
     <state width="1349" height="249" key="GridCell.Tab.0.bottom/-453.-1055.2560.1055/0.25.1680.938@-453.-1055.2560.1055" timestamp="1622877368302" />
-    <state width="1349" height="249" key="GridCell.Tab.0.bottom/-453.-1055.2560.1055/0.25.1680.938@0.25.1680.938" timestamp="1623127847815" />
+    <state width="1349" height="249" key="GridCell.Tab.0.bottom/-453.-1055.2560.1055/0.25.1680.938@0.25.1680.938" timestamp="1623136997284" />
     <state width="1349" height="249" key="GridCell.Tab.0.bottom/-453.-1055.2560.1055/0.25.1680.941@-453.-1055.2560.1055" timestamp="1622871607320" />
     <state width="1349" height="249" key="GridCell.Tab.0.bottom/-453.-1055.2560.1055/0.25.1680.944@-453.-1055.2560.1055" timestamp="1622873041883" />
     <state width="1349" height="249" key="GridCell.Tab.0.bottom/-453.-1055.2560.1055/0.25.1680.946@-453.-1055.2560.1055" timestamp="1622870327758" />
     <state width="1349" height="249" key="GridCell.Tab.0.bottom/-453.-1055.2560.1055/0.25.1680.948@-453.-1055.2560.1055" timestamp="1622869023418" />
     <state width="1349" height="249" key="GridCell.Tab.0.bottom/-453.-1055.2560.1055/0.25.1680.950@-453.-1055.2560.1055" timestamp="1622866972745" />
-    <state width="1349" height="249" key="GridCell.Tab.0.center" timestamp="1623127847814">
+    <state width="1349" height="249" key="GridCell.Tab.0.center" timestamp="1623136997283">
       <screen x="0" y="25" width="1680" height="938" />
     </state>
     <state width="1349" height="249" key="GridCell.Tab.0.center/-453.-1055.2560.1055/0.25.1680.938@-453.-1055.2560.1055" timestamp="1622877368302" />
-    <state width="1349" height="249" key="GridCell.Tab.0.center/-453.-1055.2560.1055/0.25.1680.938@0.25.1680.938" timestamp="1623127847814" />
+    <state width="1349" height="249" key="GridCell.Tab.0.center/-453.-1055.2560.1055/0.25.1680.938@0.25.1680.938" timestamp="1623136997283" />
     <state width="1349" height="249" key="GridCell.Tab.0.center/-453.-1055.2560.1055/0.25.1680.941@-453.-1055.2560.1055" timestamp="1622871607319" />
     <state width="1349" height="249" key="GridCell.Tab.0.center/-453.-1055.2560.1055/0.25.1680.944@-453.-1055.2560.1055" timestamp="1622873041882" />
     <state width="1349" height="249" key="GridCell.Tab.0.center/-453.-1055.2560.1055/0.25.1680.946@-453.-1055.2560.1055" timestamp="1622870327757" />
     <state width="1349" height="249" key="GridCell.Tab.0.center/-453.-1055.2560.1055/0.25.1680.948@-453.-1055.2560.1055" timestamp="1622869023418" />
     <state width="1349" height="249" key="GridCell.Tab.0.center/-453.-1055.2560.1055/0.25.1680.950@-453.-1055.2560.1055" timestamp="1622866972744" />
-    <state width="1349" height="249" key="GridCell.Tab.0.left" timestamp="1623127847814">
+    <state width="1349" height="249" key="GridCell.Tab.0.left" timestamp="1623136997283">
       <screen x="0" y="25" width="1680" height="938" />
     </state>
     <state width="1349" height="249" key="GridCell.Tab.0.left/-453.-1055.2560.1055/0.25.1680.938@-453.-1055.2560.1055" timestamp="1622877368301" />
-    <state width="1349" height="249" key="GridCell.Tab.0.left/-453.-1055.2560.1055/0.25.1680.938@0.25.1680.938" timestamp="1623127847814" />
+    <state width="1349" height="249" key="GridCell.Tab.0.left/-453.-1055.2560.1055/0.25.1680.938@0.25.1680.938" timestamp="1623136997283" />
     <state width="1349" height="249" key="GridCell.Tab.0.left/-453.-1055.2560.1055/0.25.1680.941@-453.-1055.2560.1055" timestamp="1622871607319" />
     <state width="1349" height="249" key="GridCell.Tab.0.left/-453.-1055.2560.1055/0.25.1680.944@-453.-1055.2560.1055" timestamp="1622873041882" />
     <state width="1349" height="249" key="GridCell.Tab.0.left/-453.-1055.2560.1055/0.25.1680.946@-453.-1055.2560.1055" timestamp="1622870327756" />
     <state width="1349" height="249" key="GridCell.Tab.0.left/-453.-1055.2560.1055/0.25.1680.948@-453.-1055.2560.1055" timestamp="1622869023417" />
     <state width="1349" height="249" key="GridCell.Tab.0.left/-453.-1055.2560.1055/0.25.1680.950@-453.-1055.2560.1055" timestamp="1622866972743" />
-    <state width="1349" height="249" key="GridCell.Tab.0.right" timestamp="1623127847815">
+    <state width="1349" height="249" key="GridCell.Tab.0.right" timestamp="1623136997284">
       <screen x="0" y="25" width="1680" height="938" />
     </state>
     <state width="1349" height="249" key="GridCell.Tab.0.right/-453.-1055.2560.1055/0.25.1680.938@-453.-1055.2560.1055" timestamp="1622877368302" />
-    <state width="1349" height="249" key="GridCell.Tab.0.right/-453.-1055.2560.1055/0.25.1680.938@0.25.1680.938" timestamp="1623127847815" />
+    <state width="1349" height="249" key="GridCell.Tab.0.right/-453.-1055.2560.1055/0.25.1680.938@0.25.1680.938" timestamp="1623136997284" />
     <state width="1349" height="249" key="GridCell.Tab.0.right/-453.-1055.2560.1055/0.25.1680.941@-453.-1055.2560.1055" timestamp="1622871607320" />
     <state width="1349" height="249" key="GridCell.Tab.0.right/-453.-1055.2560.1055/0.25.1680.944@-453.-1055.2560.1055" timestamp="1622873041883" />
     <state width="1349" height="249" key="GridCell.Tab.0.right/-453.-1055.2560.1055/0.25.1680.946@-453.-1055.2560.1055" timestamp="1622870327757" />
@@ -154,10 +173,10 @@
       <screen x="0" y="25" width="1680" height="938" />
     </state>
     <state x="499" y="249" width="615" height="490" key="find.popup/-453.-1055.2560.1055/0.25.1680.938@0.25.1680.938" timestamp="1623126688825" />
-    <state width="374" height="167" key="javadoc.popup.new" timestamp="1623127733662">
+    <state width="374" height="167" key="javadoc.popup.new" timestamp="1623136908041">
       <screen x="0" y="25" width="1680" height="938" />
     </state>
-    <state width="374" height="167" key="javadoc.popup.new/-453.-1055.2560.1055/0.25.1680.938@0.25.1680.938" timestamp="1623127733662" />
+    <state width="374" height="167" key="javadoc.popup.new/-453.-1055.2560.1055/0.25.1680.938@0.25.1680.938" timestamp="1623136908041" />
     <state x="540" y="230" width="670" height="676" key="search.everywhere.popup" timestamp="1623050636782">
       <screen x="0" y="25" width="1680" height="938" />
     </state>
@@ -167,24 +186,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/data/repositories/data_repository.dart</url>
+          <url>file://$PROJECT_DIR$/lib/data/repositories/short_link_repository.dart</url>
           <line>10</line>
-          <option name="timeStamp" value="13" />
+          <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/lib/data/repositories/short_link_repository.dart</url>
-          <line>14</line>
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/data/repositories/short_link_repository.dart</url>
-          <line>12</line>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/data/repositories/short_link_repository.dart</url>
-          <line>11</line>
-          <option name="timeStamp" value="47" />
+          <line>13</line>
+          <option name="timeStamp" value="50" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
