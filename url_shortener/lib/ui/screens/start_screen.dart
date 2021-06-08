@@ -33,7 +33,7 @@ class StartScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: Theme.of(context).textTheme.bodyText1),
             Padding(
-              padding: EdgeInsets.symmetric(vertical: 30.h),
+              padding: EdgeInsets.symmetric(vertical: 30.h, horizontal: 25.w),
               child: CustomButton(
                 UniqueKey(),
                 ButtonType.elevatedButton,
