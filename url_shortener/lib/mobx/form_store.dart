@@ -28,11 +28,11 @@ abstract class _FormStore with Store {
 
   @action
   void validateLink(TextEditingController controller) {
-    if (link.isEmpty) {
+    if (controller.text.isEmpty) {
       controller.clear();
       linkErrorMessage = 'Please add a link here';
       return;
-    } else if (!isURL(link)) {
+    } else if (!isURL(controller.text)) {
       controller.clear();
       linkErrorMessage = 'Please add a valid link';
       return;

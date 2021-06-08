@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:url_shortener/resources/constants.dart';
 import 'package:url_shortener/ui/widgets/custom_button.dart';
 import 'package:url_shortener/utils/router.dart';
 
@@ -21,15 +22,15 @@ class StartScreen extends StatelessWidget {
             _displayLogo(),
             Expanded(
               child: SvgPicture.asset(
-                'assets/images/illustration.svg',
+                ImagePaths.illustrationImagePath,
               ),
             ),
-            Text("More than just\nshorter links",
+            Text(Texts.startScreenHeaderText,
                 textAlign: TextAlign.center,
                 style: Theme.of(context).textTheme.headline6),
             SizedBox(height: 10.h),
             Text(
-                "Build your brand’s recognition and\nget detailed insights on how your\nlinks are performing.",
+                Texts.startScreenDescriptionText,
                 textAlign: TextAlign.center,
                 style: Theme.of(context).textTheme.bodyText1),
             Padding(
@@ -37,7 +38,7 @@ class StartScreen extends StatelessWidget {
               child: CustomButton(
                 UniqueKey(),
                 ButtonType.elevatedButton,
-                "Start",
+                Texts.startScreenStartButtonText,
                 () => Navigator.of(context).pushNamed(benefitsRoute),
               ),
             ),
@@ -53,7 +54,7 @@ class StartScreen extends StatelessWidget {
         top: 50.h,
       ),
       child: SvgPicture.asset(
-        'assets/images/logo.svg',
+        ImagePaths.logoImagePath,
         width: 120.w,
         height: 32.h,
       ),

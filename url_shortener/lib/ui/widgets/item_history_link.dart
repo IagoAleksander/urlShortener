@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:url_shortener/data/models/shortened_url.dart';
 import 'package:url_shortener/resources/colors.dart';
+import 'package:url_shortener/resources/constants.dart';
 import 'package:url_shortener/ui/widgets/custom_button.dart';
 
 class CardLink extends StatelessWidget {
@@ -47,7 +48,7 @@ class CardLink extends StatelessWidget {
                   InkWell(
                     onTap: _removeFunction,
                     child: SvgPicture.asset(
-                      'assets/icons/del.svg',
+                      IconPaths.deleteIconPath,
                       height: 18.h,
                       color: ColorsRes.neutralGrayishViolet,
                     ),
@@ -81,7 +82,9 @@ class CardLink extends StatelessWidget {
               child: CustomButton(
                 UniqueKey(),
                 ButtonType.elevatedButton,
-                shortenedUrl.isSelected ? "Copied!" : "Copy",
+                shortenedUrl.isSelected
+                    ? Texts.historyItemWidgetCopiedButtonText
+                    : Texts.historyItemWidgetCopyButtonText,
                 _clickFunction,
                 isAlternativeVersion: shortenedUrl.isSelected,
               ),

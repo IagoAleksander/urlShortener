@@ -5,6 +5,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:url_shortener/data/models/shortened_url.dart';
 import 'package:url_shortener/mobx/form_store.dart';
 import 'package:url_shortener/mobx/url_shortener_store.dart';
+import 'package:url_shortener/resources/constants.dart';
 import 'package:url_shortener/ui/widgets/custom_button.dart';
 import 'package:url_shortener/ui/widgets/item_history_link.dart';
 
@@ -61,8 +62,8 @@ class _MainScreenState extends State<MainScreen> {
           SizedBox(height: 16.h),
           Text(
             urlShortenerStore.state == EnumState.loadingHistory
-                ? "Wait a moment, please!\nLoading url history..."
-                : "Wait a moment, please!\nShortening your url...",
+                ? Texts.mainScreenLoadingUrlsProgressIndicatorText
+                : Texts.mainScreenShorteningUrlProgressIndicatorText,
             style: Theme.of(context).textTheme.bodyText1,
             textAlign: TextAlign.center,
           )
@@ -83,7 +84,7 @@ class _MainScreenState extends State<MainScreen> {
                 return Container();
               } else {
                 return SvgPicture.asset(
-                  'assets/images/illustration.svg',
+                  ImagePaths.illustrationImagePath,
                 );
               }
             },
@@ -91,12 +92,12 @@ class _MainScreenState extends State<MainScreen> {
         ),
         SizedBox(height: 8.h),
         Text(
-          "Let’s get started!",
+          Texts.mainScreenEmptyStateHeaderText,
           textAlign: TextAlign.center,
           style: Theme.of(context).textTheme.subtitle1,
         ),
         SizedBox(height: 7.h),
-        Text("Paste your first link into\nthe field to shorten it",
+        Text(Texts.mainScreenEmptyStateDescriptionText,
             textAlign: TextAlign.center,
             style: Theme.of(context).textTheme.bodyText1),
         SizedBox(height: 48.h),
@@ -110,7 +111,7 @@ class _MainScreenState extends State<MainScreen> {
         top: 50.h,
       ),
       child: SvgPicture.asset(
-        'assets/images/logo.svg',
+        ImagePaths.logoImagePath,
         width: 120.w,
         height: 32.h,
       ),
@@ -125,7 +126,7 @@ class _MainScreenState extends State<MainScreen> {
           return Padding(
             padding: EdgeInsets.only(top: 40.h, bottom: 10.h),
             child: Text(
-              "Your Link History",
+              Texts.mainScreenContentListHeaderText,
               style: Theme.of(context).textTheme.bodyText1,
               textAlign: TextAlign.center,
             ),
@@ -150,7 +151,7 @@ class _MainScreenState extends State<MainScreen> {
         children: <Widget>[
           Align(
             alignment: Alignment.topRight,
-            child: SvgPicture.asset('assets/images/shape.svg'),
+            child: SvgPicture.asset(ImagePaths.shapeImagePath),
           ),
           Column(
             children: [
@@ -176,7 +177,7 @@ class _MainScreenState extends State<MainScreen> {
                         fillColor: Theme.of(context).backgroundColor,
                         filled: true,
                         hintText: formStore.linkErrorMessage ??
-                            "Shorten a link here ...",
+                            Texts.mainScreenFormHintText,
                         hintStyle: !formStore.hasErrors
                             ? Theme.of(context).textTheme.caption
                             : Theme.of(context).textTheme.caption?.merge(
@@ -203,7 +204,7 @@ class _MainScreenState extends State<MainScreen> {
                 child: CustomButton(
                   UniqueKey(),
                   ButtonType.elevatedButton,
-                  "Shorten it!",
+                  Texts.mainScreenShortenUrlButtonText,
                   () {
                     formStore.validateLink(_linkFieldController);
                     if (!formStore.hasErrors) {
@@ -224,20 +225,20 @@ class _MainScreenState extends State<MainScreen> {
       context: context,
       builder: (BuildContext context) => AlertDialog(
         content: Text(
-          "Do you really want to remove the shortened link from the history?",
+          Texts.mainScreenDeleteConfirmationDialogText,
           style: Theme.of(context).textTheme.bodyText1,
         ),
         actions: <Widget>[
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text('Cancel'),
+            child: const Text(Texts.mainScreenDeleteConfirmationDialogCancelOptionText),
           ),
           TextButton(
             onPressed: () {
               urlShortenerStore.removeUrlFromHistory(model);
               Navigator.pop(context);
             },
-            child: const Text('Remove'),
+            child: const Text(Texts.mainScreenDeleteConfirmationDialogConfirmOptionText),
           ),
         ],
       ),

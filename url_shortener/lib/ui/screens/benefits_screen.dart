@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:page_view_indicators/circle_page_indicator.dart';
 import 'package:url_shortener/data/models/benefit.dart';
+import 'package:url_shortener/resources/constants.dart';
 import 'package:url_shortener/ui/widgets/custom_button.dart';
 import 'package:url_shortener/ui/widgets/item_benefit.dart';
 import 'package:url_shortener/utils/router.dart';
@@ -23,15 +24,15 @@ class _BenefitsScreenState extends State<BenefitsScreen> {
     Benefit(
         "Brand Recognition",
         "Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.",
-        'assets/icons/diagram.svg'),
+        IconPaths.diagramIconPath),
     Benefit(
         "Detailed Records",
         "Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.",
-        'assets/icons/gauge.svg'),
+        IconPaths.gaugeIconPath),
     Benefit(
         "Fully Customizable",
         "lmprove brand awareness and content discoverability through customizable links, supercharglng audience engagement.",
-        'assets/icons/tools.svg')
+        IconPaths.toolsIconPath)
   ];
 
   @override
@@ -57,7 +58,7 @@ class _BenefitsScreenState extends State<BenefitsScreen> {
             CustomButton(
               UniqueKey(),
               ButtonType.textButton,
-              "Skip",
+              Texts.benefitsScreenSkipButtonText,
               () => Navigator.of(context).pushNamed(mainRoute),
             )
           ],
@@ -72,7 +73,7 @@ class _BenefitsScreenState extends State<BenefitsScreen> {
         top: 50.h,
       ),
       child: SvgPicture.asset(
-        'assets/images/logo.svg',
+        ImagePaths.logoImagePath,
         width: 120.w,
         height: 32.h,
       ),
