@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:url_shortener/data/models/shortened_url.dart';
 import 'package:url_shortener/mobx/form_store.dart';
 import 'package:url_shortener/mobx/url_shortener_store.dart';
@@ -41,6 +42,14 @@ class _MainScreenState extends State<MainScreen> {
                     case EnumState.emptyState:
                       return _displayEmptyState();
                     case EnumState.contentList:
+                    case EnumState.errorState:
+                      if (urlShortenerStore.state == EnumState.errorState) {
+                        Fluttertoast.showToast(
+                          msg: Texts
+                              .mainScreenPreviouslyShortenedUrlFallbackErrorText,
+                          backgroundColor: Colors.grey,
+                        );
+                      }
                       return _displayContentList();
                   }
                 },
@@ -231,14 +240,16 @@ class _MainScreenState extends State<MainScreen> {
         actions: <Widget>[
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text(Texts.mainScreenDeleteConfirmationDialogCancelOptionText),
+            child: const Text(
+                Texts.mainScreenDeleteConfirmationDialogCancelOptionText),
           ),
           TextButton(
             onPressed: () {
               urlShortenerStore.removeUrlFromHistory(model);
               Navigator.pop(context);
             },
-            child: const Text(Texts.mainScreenDeleteConfirmationDialogConfirmOptionText),
+            child: const Text(
+                Texts.mainScreenDeleteConfirmationDialogConfirmOptionText),
           ),
         ],
       ),

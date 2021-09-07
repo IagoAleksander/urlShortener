@@ -11,7 +11,7 @@ part 'url_shortener_store.g.dart';
 
 class UrlShortenerStore = _UrlShortenerStore with _$UrlShortenerStore;
 
-enum EnumState { emptyState, loadingHistory, shorteningUrl, contentList }
+enum EnumState { emptyState, loadingHistory, shorteningUrl, contentList, errorState }
 
 abstract class _UrlShortenerStore with Store {
   @observable
@@ -35,21 +35,31 @@ abstract class _UrlShortenerStore with Store {
   @action
   shortUrl(TextEditingController controller) async {
     if (state != EnumState.shorteningUrl) {
-      state = EnumState.shorteningUrl;
+      List<String> urlList = [];
+      urlsList.asMap().values.forEach((shortenedUrl) {
+        urlList.add(shortenedUrl.originalLink);
+      });
+      if (!urlList.contains(controller.value.text) && !urlList.contains("http://${controller.value.text}")) {
+        state = EnumState.shorteningUrl;
 
-      UrlShortenerResponse? response = await fetchUrl(client, controller.text);
-      ShortenedUrl url = ShortenedUrl(
-        originalLink: response.originalLink,
-        shortLink: response.shortLink,
-      );
-      int insertedId = await saveUrl(url);
+        UrlShortenerResponse? response =
+            await fetchUrl(client, controller.text);
+        ShortenedUrl url = ShortenedUrl(
+          originalLink: response.originalLink,
+          shortLink: response.shortLink,
+        );
+        int insertedId = await saveUrl(url);
 
-      if (insertedId > 0) {
-        fetchUrls();
-        controller.clear();
-        state = EnumState.contentList;
-      } else {
-        //todo display database error toast message
+        if (insertedId > 0) {
+          fetchUrls();
+          controller.clear();
+          state = EnumState.contentList;
+        } else {
+          //todo display database error toast message
+        }
+      }
+      else {
+        state = EnumState.errorState;
       }
     }
   }

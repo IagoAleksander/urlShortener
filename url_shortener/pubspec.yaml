@@ -40,6 +40,7 @@ dependencies:
   http: ^0.13.3
   provider: ^5.0.0
   mockito: ^5.0.10
+  fluttertoast: ^8.0.8
 
 dev_dependencies:
   flutter_test:

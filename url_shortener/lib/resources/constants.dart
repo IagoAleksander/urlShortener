@@ -32,6 +32,8 @@ class Texts {
   static const mainScreenContentListHeaderText = "Your Link History";
   static const mainScreenFormHintText = "Shorten a link here ...";
   static const mainScreenShortenUrlButtonText = "Shorten it!";
+  static const mainScreenPreviouslyShortenedUrlFallbackErrorText =
+      "This url was already shortened!";
   static const mainScreenDeleteConfirmationDialogText =
       "Do you really want to remove the shortened link from the history?";
   static const mainScreenDeleteConfirmationDialogCancelOptionText = "Cancel";
