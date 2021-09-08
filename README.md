@@ -1,3 +1,6 @@
+# urlShortener
+# IMPORTANT -> Project need to be opened from inside the url_shortener folder
+
 ### Objective
 
 Using Dart and Flutter, your challenge is to build out a URL shortening mobile app, integrate with the [shrtcode API](https://app.shrtco.de/docs), and get it looking as close to the design as possible.
@@ -17,33 +20,3 @@ Your users should be able to:
 -   Delete a shortened link from their Link History
 -   Receive an error message when the `form` is submitted if:
     -   The `input` field is empty
-
-Your task is to build out the project to the designs inside the `/design` folder.
-See the designs in Figma here: https://bit.ly/330dJxN
-See the designs as a video here: https://bit.ly/3eEYboF
-
-You will find all the required assets in the `/images` folder. The assets are already optimized. The designs are in JPG static format. This will mean that you'll need to use your best judgment for styles such as `font-size`, `padding`, and `margin`.
-
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
-
-### Evaluation Criteria
-
--   **Dart** best practices
--   Show us your work through your commit history
--   We're looking for you to produce working code, with enough room to demonstrate how to structure components in a small program
--   Completeness: did you complete the features?
--   Correctness: does the functionality act in sensible, thought-out ways?
--   Maintainability: is it written in a clean, maintainable way?
--   Testing: is the code adequately tested?
-
-### Deliverables
-
-Make sure to include all source code in the repository.
-
-### CodeSubmit
-
-Please organize, design, test, and document your code as if it were going into production - then push your changes to the master branch. After you have pushed your code, you may submit the assignment on the assignment page.
-
-**Have fun building!** 🚀
-
-The Apollon Fulfillment GmbH Team
